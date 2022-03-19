@@ -3,7 +3,7 @@
 ### Installation guide
 
 #### Only for first run. Install linux headers.
-1. Apt update
+1. Download package information from all configured sources
 ```shell
 sudo apt update
 ```
