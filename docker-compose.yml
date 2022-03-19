@@ -12,7 +12,7 @@ services:
       - PGID=1000
       - TZ=Europe/London
       - SERVERPORT=51820
-      - PEERS=4
+      - PEERS=6
       - PEERDNS=auto
       - ALLOWEDIPS=0.0.0.0/0
     volumes:
