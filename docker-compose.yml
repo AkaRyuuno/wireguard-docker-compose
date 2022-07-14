@@ -1,8 +1,17 @@
-version: "3.8"
+version: "3.9"
 
 services:
   wireguard:
     image: linuxserver/wireguard:1.0.20210914
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
     container_name: wireguard
     cap_add:
       - NET_ADMIN
